@@ -1,26 +1,21 @@
-void main(){
-  // 1. Explicitly defined variables
-  String name = 'Md. Shahjamal';
-  int age = 25;
-  bool isCseStudent = true;
+void main() {
+  var userName = 'Md. Shahjamal Khan';
+  int followerCount = 100;
+  var followingCount = 10;
 
-  // Notice the '$' symbol? That is called String Interpolation. 
-  // It's the cleanest way to inject variables directly into text.
-  print('Developer Profile: $name, Age: $age');
-  print('Is studying CSE? $isCseStudent');
+  var watchHour = 36.5;
+  var bio = '''I am a mobile app developer. 
+      I am learning Dart language. 
+      I am a student of programming hero.''';
+  var hours = watchHour.toInt();
+  var minutes = (watchHour - hours) * 60;
 
-  // 2. Type Inference using 'var'
-  var businessName = 'Mitali Enterprise';
-  print('Business Owner of: $businessName');
-  
-  // If we uncomment the line below, the code will crash because 'var' locked it as a String!
-  // businessName = 100; 
+  print('My Usernameis $userName'); 
+  print('My follower count is $followerCount count');
+  print('My following count is $followingCount');
+  print('My watch hour is $watchHour');
+  print('My bio is: $bio');
 
-  // 3. The 'dynamic' keyword
-  dynamic currentTask = 'Learning Dart';
-  print('Current Task (String): $currentTask');
+  print(minutes);
 
-  // dynamic allows us to completely change the data type later
-  currentTask = 2; 
-  print('Current Task (Integer): Day $currentTask');
 }
