@@ -1,5 +1,5 @@
 void main() {
-  String text = 'Hello';
+  //String text = 'Hello';
   var Newpost = Post();
   Newpost.title = 'Change Title';
   Newpost.likes = 1;
